@@ -1,5 +1,82 @@
-a:hover {
-	text-decoration: none;
+html {
+	--background: #baeaea;
+	--text: #000000;
+	--accent1: #f3008c;
+	--accent2: #00d9b4;
 }
 
-/* I believe bootstrap 4 has stuff that makes both of these obsolete thank the lord */
+body {
+	background: var(--background);
+	font-family: 'Roboto', sans-serif;
+	color: var(--text);
+}
+
+h1, h2, h3, h4 {
+
+	font-family: 'Shrikhand', cursive;
+	color: var(--accent1);
+	margin-bottom: 1.5em;
+}
+
+h1 {
+	color: var(--accent2);
+	font-size: 3em;
+	-moz-text-stroke: 1px var(--text);
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+a {
+	color: var(--accent1);
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--accent2);
+}
+
+.border-info {
+  	border-color: var(--accent2) !important;
+}
+
+.btn {
+	background: var(--accent2);
+}
+
+.card {
+	background: var(--background);
+	min-width: 260px;
+}
+
+.jumbotron {
+	background-color: var(--background);
+	background-image: url('../images/keys.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding-top: 200px;
+}
+
+.navbar {
+	background: var(--background);
+	border-bottom: 1px solid var(--accent2);
+}
+
+@media (max-width: 800px) {
+	.jumbotron {
+		height: 400px;
+	}
+}
+
+@media (max-width: 423px) {
+	.jumbotron {
+		height: 330px;
+		padding-top: 100px;
+	}
+}
+

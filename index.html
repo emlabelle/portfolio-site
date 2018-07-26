@@ -3,149 +3,141 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit="no">
 
 	<title>Emma LaBelle</title>
 
+	<!-- <link rel="icon" href="images/favicon.png"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand|Play|Press+Start+2P" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link id="css-main" rel="stylesheet" href="css/main.css">
-	<!-- <link rel="icon" href="images/favicon.png"> -->
 </head>
 
 <body>
 
-<!-- nav (CHOOSE A NAVBAR OPTION)--> 
-<div>
-	<button class="btn btn-default"><a href="#about">About</a></button>
-    <button class="btn btn-default"><a href="#projects">Projects</a></button>
-    <button class="btn btn-default"><a href="#contact">Contact</a></button>
+<!-- header -->
+<header class="parallax">
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1 class="mb-4">Emma LaBelle</h1>
+			<h4>&lt Web Development &gt</h4>
+		</div> <!-- end container -->
+	</div><!-- end jumbotron -->
+</header>
+
+<!-- nav --> 
+<nav class="navbar d-flex sticky-top">
+<ul class="navbar-nav flex-row mx-auto">
+	<li class="nav-item mx-3">
+		<a class="nav-link" href="#about">About</a>
+	</li>
+	<li class="nav-item mx-3">
+		<a class="nav-link" href="#sites">Work</a>
+	</li>
+	<li class="nav-item mx-3">
+		<a class="nav-link" href="#contact">Contact</a>
+	</li>
+</nav>
+
+<!-- about me -->
+<div id="about" class="mb-4 p-4 text-center">
+	<p>Welcome! I'm a front-end web developer currently looking for opportunities in the Denver, Colorado area. Let me .addClass() to your website!</p>
+	<a href="files/LaBelleResume.pdf" download>Download my resume</a>
 </div>
 
-<!-- header -->
-<div class="jumbotron">
-	<div class="container text-center">
-		<h1>Banner</h1>
-		<h3>T E X T</h3>
-		<p>As reader scrolls down, this text fades in.... Bacon ipsum dolor amet turducken occaecat flank strip steak velit. Dolore prosciutto proident buffalo pork belly, short ribs alcatra in spare ribs. Meatloaf swine brisket rump burgdoggen pork chop hamburger, jerky strip steak cupim kevin turkey.</p>
-		<!-- style change options (possible animation on scroll) -->
-		<p>Try out these styles!</p>
-		<div>
-			<button id="main">Main</button>
-			<button id="retro">Retro</button>
-		</div>
-	</div> <!-- end container -->
-</div> <!-- end header -->
-
-<!-- gallery -->
+<!-- project gallery -->
 <div id="projects" class="text-center">
 	<h2>Projects</h2>
 </div>
 
 <div class="container">
-	<div class="card-deck">
+	<div class="card-deck d-flex flex-row-reverse flex-wrap-reverse">
+		<!-- thumb -->
+		<a href="https://codepen.io/emlabelle/pen/veKPKR" target="_blank">
+			<div class="card border border-info mb-4">
+				<img class="card-img-top img-fluid" src="images/clock.png" alt="Pomodoro Clock">
+				<div class="card-body">
+	          		<h4 class="card-title">Pomodoro Clock</h4>
+	    </a>
+	            	<p class="card-text">Pomodoro clock with adjustable work and break periods, plus an alarm function.</p>
+		        </div>
+			</div>
+		<!-- thumb -->
+		<a href="https://codepen.io/emlabelle/pen/VbYPaZ" target="_blank">
+			<div class="card border border-info mb-4">
+				<img class="card-img-top img-fluid" src="images/wikipedia.png" alt="Search Wikipedia">
+				<div class="card-body">
+	          		<h4 class="card-title">Search Wikipedia</h4>
+	    </a>
+	            	<p class="card-text">Uses the Wikipedia API to provide links to articles matching your search.</p>
+		        </div>
+			</div>
 		<!-- thumb -->
 		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
 			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="https://baconmockup.com/215/180" alt="...">
+				<img class="card-img-top img-fluid" src="images/calc.png" alt="Calculator">
 				<div class="card-body">
-	          		<div class="caption">
-	            		<h4>Calculator</h4>
-	            		<p>Made with Javascript</p>
-	        		</div>
+	          		<h4 class="card-title">Calculator</h4>
+	    </a>
+	            	<p class="card-text">Fully-functional calculator programmed with Javascript.</p>
 		        </div>
 			</div>
-		</a>
 		<!-- thumb -->
-		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
+		<a href="https://codepen.io/emlabelle/pen/WXbgvQ" target="_blank">
 			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="https://baconmockup.com/215/180" alt="...">
+				<img class="card-img-top img-fluid" src="images/tictactoe.png" alt="Tic Tac Toe">
 				<div class="card-body">
-	          		<div class="caption">
-	            		<h4>Simon</h4>
-	            		<p>Made with Javascript</p>
-	        		</div>
+	          		<h4 class="card-title">Tic Tac Toe</h4>
+	    </a>
+	            	<p class="card-text">Play a game of tic tac toe against a simulated opponent. Uses a min-max algorithm that will always win or force a tie.</p>
 		        </div>
 			</div>
-		</a>
 		<!-- thumb -->
-		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
+		<a href="https://codepen.io/emlabelle/pen/KyqqMr" target="_blank">
 			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="https://baconmockup.com/215/180" alt="...">
+				<img class="card-img-top img-fluid" src="images/simon.png" alt="Simon">
 				<div class="card-body">
-	          		<div class="caption">
-	            		<h4>Calculator</h4>
-	            		<p>Made with Javascript</p>
-	        		</div>
+	          		<h4 class="card-title">Simon</h4>
+	    </a>
+	            	<p class="card-text">A Simon game programmed with Javascript. Has two levels of difficulty.</p>
 		        </div>
 			</div>
-		</a>
-		<!-- thumb -->
-		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
+		<!-- ADD NEW CARDS HERE ~~~ *** ~~~ ***
+		<a href="#" target="_blank">
 			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="https://baconmockup.com/215/180" alt="...">
+				<img class="card-img-top img-fluid" src="images/newman-evans.png" alt="Wordpress Portfolio">
 				<div class="card-body">
-	          		<div class="caption">
-	            		<h4>Simon</h4>
-	            		<p>Made with Javascript</p>
-	        		</div>
+	          		<h4 class="card-title">Wordpress Portfolio</h4>
+	    </a>
+	            	<p class="card-text">Personal portfolio site for graphic designer Melissa Newman-Evans.</p>
 		        </div>
-			</div>
-		</a>
-		<!-- thumb -->
-		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
-			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="https://baconmockup.com/215/180" alt="...">
-				<div class="card-body">
-	          		<div class="caption">
-	            		<h4>Calculator</h4>
-	            		<p>Made with Javascript</p>
-	        		</div>
-		        </div>
-			</div>
-		</a>
-		<!-- thumb -->
-		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
-			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="https://baconmockup.com/215/180" alt="...">
-				<div class="card-body">
-	          		<div class="caption">
-	            		<h4>Simon</h4>
-	            		<p>Made with Javascript</p>
-	        		</div>
-		        </div>
-			</div>
-		</a>
+			</div> -->
 	</div> <!-- end of card deck -->
-</div> <!-- end of gallery -->
-
-<hr>
+</div> <!-- end of container -->
 
 <!-- contact -->
 <div id="contact" class="text-center">
 	<h2>Reach out!</h2>
 	<p>I'd love to hear from you!</p>
 </div>
-<div class="row-centered">
-    <a href="https://twitter.com/madame_furious" target="_blank">
-    	<i class="fab fa-twitter fa-4x"></i>
+<div class="d-flex justify-content-center">
+	<a href="mailto:emlabelle@gmail.com" target="_blank">
+    	<i class="fa fa-envelope fa-4x m-1"></i>
+    </a> 
+    <a href="https://www.linkedin.com/in/emma-labelle-a2145a1b/" target="_blank">
+    	<i class="fab fa-linkedin fa-4x m-1"></i>
     </a>
     <a href="https://github.com/emlabelle" target="_blank">
-    	<i class="fab fa-github fa-4x"></i>
+    	<i class="fab fa-github fa-4x m-1"></i>
     </a>
-    <a href="https://www.linkedin.com/in/emma-labelle-a2145a1b/" target="_blank">
-    	<i class="fab fa-linkedin fa-4x"></i>
-    </a>
-    <a href="mailto:emlabelle@gmail.com" target="_blank">
-    	<i class="fa fa-envelope fa-4x"></i>
-    </a> 
     <a href="https://codepen.io/emlabelle/" target="_blank">
-    	<i class="fab fa-codepen fa-4x"></i>
+    	<i class="fab fa-codepen fa-4x m-1"></i>
     </a>
 </div>
 
 <!-- footer -->
-<footer class="text-center">
-  <p>Site by Emma LaBelle | 2018<p>
+<footer class="pt-4 text-center">
+  <p>Site by Emma LaBelle, 2018 | Header photo by <a href="https://unsplash.com/@atgranberry?utm_medium" target="_blank" title="Download free do whatever you want high-resolution photos from Aidan Granberry">Aidan Granberry</a> on <a href="https://unsplash.com/" target="_blank" title="Unsplash">Unsplash</a></p>
 </footer>
 
 <!-- scripts -->
