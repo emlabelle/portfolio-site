@@ -11,6 +11,15 @@ body {
 	color: var(--text);
 }
 
+a {
+	color: var(--accent1);
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--accent2);
+}
+
 h1, h2, h3, h4 {
 
 	font-family: 'Shrikhand', cursive;
@@ -27,15 +36,6 @@ h1 {
 
 h4 {
 	font-size: 1.25em;
-}
-
-a {
-	color: var(--accent1);
-}
-
-a:hover {
-	text-decoration: none;
-	color: var(--accent2);
 }
 
 .border-info {
@@ -65,6 +65,15 @@ a:hover {
 .navbar {
 	background: var(--background);
 	border-bottom: 1px solid var(--accent2);
+}
+
+#about {
+	height: 50px;
+}
+
+#intro {
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 @media (max-width: 800px) {
