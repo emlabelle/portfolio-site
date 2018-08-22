@@ -8,7 +8,7 @@
 	<title>Emma LaBelle</title>
 
 	<!-- <link rel="icon" href="images/favicon.png"> -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand|Play|Press+Start+2P" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link id="css-main" rel="stylesheet" href="css/main.css">
 </head>
@@ -16,7 +16,7 @@
 <body>
 
 <!-- header -->
-<header class="parallax">
+<header role="banner" class="parallax">
 	<div class="jumbotron">
 		<div class="container text-center">
 			<h1 class="mb-4">Emma LaBelle</h1>
@@ -26,7 +26,7 @@
 </header>
 
 <!-- nav --> 
-<nav class="navbar d-flex sticky-top">
+<nav role="navigation" class="navbar d-flex sticky-top">
 	<ul class="navbar-nav flex-row mx-auto">
 		<li class="nav-item mx-3">
 			<a class="nav-link" href="#about">About</a>
@@ -42,18 +42,18 @@
 <div id="about">
 </div>
 <!-- about me -->
-<div id="intro" class="mb-4 p-4 text-center">
-	<p>Welcome! I'm a front-end web developer currently looking for opportunities to work, build, learn and explore in the Denver, Colorado area. My technical skills include HTML5/CSS3, Javascript ES6, jQuery, Wordpress, Bootstrap 4, and Git. Let me .addClass() to your website!</p>
+<section role="main" class="mb-4 p-4 text-block text-center">
+	<p>Welcome! I'm a front-end web developer currently looking for opportunities to work, build, learn and explore in the Denver, Colorado area. My technical skills include HTML5/CSS3, Javascript, jQuery, Wordpress, Bootstrap, and Git. <a href="https://www.freecodecamp.org/certification/emlabelle/legacy-front-end"> Free Code Camp</a> certified. Let me .addClass() to your website!</p>
 
 	<a href="files/LaBelleResume.pdf" download>Download my resume</a>
-</div>
+</section>
 
 <!-- project gallery -->
 <div id="projects" class="text-center">
 	<h2>Projects</h2>
 </div>
 
-<div class="container">
+<section role="complementary" class="container">
 	<div class="card-deck d-flex flex-row-reverse flex-wrap-reverse">
 		<!-- thumb -->
 		<a href="https://codepen.io/emlabelle/pen/veKPKR" target="_blank">
@@ -68,15 +68,15 @@
 		<!-- thumb -->
 		<a href="https://codepen.io/emlabelle/pen/VbYPaZ" target="_blank">
 			<div class="card border border-info mb-4">
-				<img class="card-img-top img-fluid" src="images/wikipedia.png" alt="Search Wikipedia">
+				<img class="card-img-top img-fluid" src="images/wikipedia.png" alt="Wikipedia Search">
 				<div class="card-body">
-	          		<h4 class="card-title">Search Wikipedia</h4>
+	          		<h4 class="card-title">Wikipedia Search</h4>
 	    </a>
 	            	<p class="card-text">Uses the Wikipedia API to provide links to articles matching your search.</p>
 		        </div>
 			</div>
 		<!-- thumb -->
-		<a href="https://codepen.io/emlabelle/pen/prGZBO" target="_blank">
+		<a href="https://codepen.io/emlabelle/full/prGZBO/" target="_blank">
 			<div class="card border border-info mb-4">
 				<img class="card-img-top img-fluid" src="images/calc.png" alt="Calculator">
 				<div class="card-body">
@@ -116,30 +116,30 @@
 		        </div>
 			</div> -->
 	</div> <!-- end of card deck -->
-</div> <!-- end of container -->
+</section> <!-- end of container -->
 
 <!-- contact -->
 <div id="contact" class="text-center">
 	<h2>Reach out!</h2>
 	<p>I'd love to hear from you!</p>
 </div>
-<div class="d-flex justify-content-center">
+<section role="complementary" class="d-flex justify-content-center">
 	<a href="mailto:emlabelle@gmail.com" target="_blank">
-    	<i class="fa fa-envelope fa-4x m-1"></i>
+    	<i aria-label="Email" class="fa fa-envelope fa-4x m-1"></i>
     </a> 
     <a href="https://www.linkedin.com/in/emma-labelle-a2145a1b/" target="_blank">
-    	<i class="fab fa-linkedin fa-4x m-1"></i>
+    	<i aria-label="LinkedIn" class="fab fa-linkedin fa-4x m-1"></i>
     </a>
     <a href="https://github.com/emlabelle" target="_blank">
-    	<i class="fab fa-github fa-4x m-1"></i>
+    	<i aria-label="GitHub" class="fab fa-github fa-4x m-1"></i>
     </a>
     <a href="https://codepen.io/emlabelle/" target="_blank">
-    	<i class="fab fa-codepen fa-4x m-1"></i>
+    	<i aria-label="CodePen" class="fab fa-codepen fa-4x m-1"></i>
     </a>
-</div>
+</section>
 
 <!-- footer -->
-<footer class="pt-4 text-center">
+<footer role="contentinfo" class="pt-4 text-center">
   <p>Site by Emma LaBelle, 2018 | Header photo by <a href="https://unsplash.com/@atgranberry?utm_medium" target="_blank" title="Download free do whatever you want high-resolution photos from Aidan Granberry">Aidan Granberry</a> on <a href="https://unsplash.com/" target="_blank" title="Unsplash">Unsplash</a></p>
 </footer>
 

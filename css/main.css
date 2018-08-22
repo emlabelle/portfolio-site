@@ -65,15 +65,17 @@ h4 {
 .navbar {
 	background: var(--background);
 	border-bottom: 1px solid var(--accent2);
+	font-family: 'Shrikhand', cursive;
+	font-size: 16pt;
+}
+
+.text-block {
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 #about {
 	height: 50px;
-}
-
-#intro {
-	margin: 0 auto;
-	max-width: 1200px;
 }
 
 @media (max-width: 800px) {
